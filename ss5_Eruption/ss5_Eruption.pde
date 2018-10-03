@@ -1,3 +1,10 @@
+//FIX THE NEGATIVE???
+//I realized that my original position actually gives a negative value
+//Which is why I'm having so many problems 
+
+//Note to try and declutter
+//code to go up and code to go down, swap the if and the if else
+
 PImage volcano;
 PImage molten;
 float moveLavaUpX = width/2;
