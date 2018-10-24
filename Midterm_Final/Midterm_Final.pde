@@ -1,5 +1,21 @@
 //Fortune Teller by Johnny Colonna
 //Instructions are given throughout the program.
+
+PImage doggo;
+PImage cat;
+PImage winter;
+PImage summer;
+PImage coffee;
+PImage tea;
+PImage active;
+PImage lazy;
+PImage light;
+PImage dark;
+PImage night;
+PImage day;
+PImage drama;
+PImage comedy;
+
 int start = 0;
 int choice1 = 0;
 int choice2 = 0;
@@ -14,6 +30,9 @@ void setup()
   textSize(40);
   rectMode(CENTER);
   fill(255);
+  
+  doggo = loadImage("doggo.jpg");
+  cat = loadImage("cat.jpg");
 
 }
 void draw()
@@ -29,6 +48,8 @@ void draw()
     background(200, 0, 0);
     text("Let's start with an easy one!", width/2, height/4-80);
     text("Dogs, or cats?", width/2, height/4-40);
+    image(doggo,width/6,height/2.5,200,200);
+    image(cat,width - width/2.5,height/2.5,200,200);
   } 
   //choice == "1"
   else if (choice1==1&& choice2==0) 
